@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package pruebajava3;
+import pruebajava3.ClaseBD;
+import javax.swing.JFrame;
 
 
 
@@ -19,8 +21,18 @@ public class PruebaJava3 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+    public static void main(String[] args) 
+    {
+       
+PruebaJava3  Linus = new PruebaJava3();
+        Linus.setVisible(true);
+        Linus.setBounds(0, 0, 600, 800);
+        //la siguiente inst. le pone el titulo a la ventana
+        Linus.setTitle("Tercera Evaluacion Sumativa");
+        //la siguiente sentencia es para finalizar el proyecto al cerrar la ventana
+        Linus.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   /
     
+                
+                    
+                } 
 }
