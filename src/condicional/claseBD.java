@@ -5,8 +5,11 @@
  */
 package condicional;
 
-/**
- *
+/**************************************
+ nombre marjorie castillo
+ fecha 10-11-17
+ clase prueba java 3
+ responsabilidad aplicacion de escritorio
  * @author LAB10
  */
 public class claseBD {
