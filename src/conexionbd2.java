@@ -3,10 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package conexionbd2;
+package conexionbd;
 import javax.swing.*;
 import java.awt.*;//paso 14-importar la clase conexion
-import bd2.ConexionBD;
 import java.sql.Connection;
 import java.awt.event.*;
 /**********************************
@@ -16,7 +15,7 @@ import java.awt.event.*;
  responsabilidad aplicacion de escritorio
  * @author LAB10
  */
-public class conexionbd2 
+public class conexionbd2 extends JFrame
 {
  JPanel panel;
  JLabel label;
@@ -25,8 +24,6 @@ public class conexionbd2
  JButton boton;
   JButton boton2;
   public conexionbd2()
-  ConexionBD con;
- 
  {
   panel = new JPanel();
 label = new JLabel();
@@ -52,10 +49,10 @@ panel.setBackground(Color.CYAN);
 //paso-16-agregamos escuchadores al boton
 boton.addActionListener(new ActionListener()
 {
- public void actionPerformed(ActionEvent evt)
+ public void  actionPerformed(ActionEvent evt)
  {
-  con = new ConexionBD();
-  Connection reg = con.conectar();
+     con = new claseBD();
+     Connection reg = con.conectar();
  }  
 });
 boton2.addActionListener(new ActionListener()
@@ -72,7 +69,7 @@ boton2.addActionListener(new ActionListener()
 }
 
     
-}  
-}
+ 
+
 
 
